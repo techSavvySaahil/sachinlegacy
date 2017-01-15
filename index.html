@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sachin's Legacy</title>
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+</head>
+<body ng-app="Main" ng-controller="MainController"  style="background-image:url({{teamsInfo[activeIndex].bgImg}})">
+	<div ng-cloak ng-if="!mainPage && teamsInfo.length">
+	<div id="container" ng-repeat="team in teamsInfo" ng-if="$index === activeIndex">
+		<div class="wrapper">
+			<img src="{{team.symbol}}">
+			<div class="card">
+				<div class="name" ng-bind="team.name"></div>
+				<div class="ranks">
+				    <span>ODI Ranking : </span><span ng-bind="team.odiRank"></span>
+				    <br>
+				    <span>Test Ranking : </span><span ng-bind="team.testRank"></span>
+				    <br>
+				    <span>T20 Ranking : </span><span ng-bind="team.t20Rank"></span>
+			    </div>
+		    </div>
+		</div>
+		<div class="interest"><span>Interesting Fact : </span><span ng-bind="team.interest"></span></div>
+		<div class="who" ng-click="showMainPage(true)">Who's he?</div>
+	</div>
+	</div>
+	<div class="main-page" ng-if="mainPage" ng-cloak style="background-image:url('assets/images/background/India_Taj_Mahal.png')">
+		<img src="assets/images/sachin.jpg">
+		<span class="close-btn" ng-click="showMainPage(false)">x Close</span>
+		<h2>Sachin Tendulkar</h2>
+		<p>Sachin Ramesh Tendulkar is a former Indian cricketer and captain. Made debut with Test match at the age of <strong>sixteen</strong>. He has many records on his name.</p>
+		<div class="records">
+			Some of his records are :
+			<ul>
+				<li>Most One-Day Internationals : 463</li>
+				<li>Most Man of the Match awards : 62</li>
+				<li>Most Man of the series awards : 15</li>
+				<li>Only one to accomplish rare ODI triple : 15000 runs(18426), 100 wickets(154) and 100(140) catches.</li>
+				<li>Most ODI runs : 18426 in 463 matches</li>
+				<li>Most Test runs : 15921 </li>
+				<li>Most ODI centuries : 49</li>
+				<li>Most Test centuries : 51</li>
+				<li>Most runs in a single World Cup : 673 in 11 matches</li>
+				<li>Most centuries in World Cups : 6</li>
+				<li>First batsman to score an ODI double hundred : 200 not out</li>
+				<li>Fastest to reach 10000, 14000, 15000 runs in Tests</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<span ng-repeat="team in teamsInfo" ng-click="changeTeam($index)"><span ng-class="{active:$index==activeIndex}" ng-bind="team.name"></span>&nbsp<span ng-if="!$last">|&nbsp</span></span>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

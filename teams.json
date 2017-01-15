@@ -1,0 +1,78 @@
+{
+	"info": {
+		"status": 200
+	},
+	"data": [{
+		"name": "australia",
+		"symbol": "assets/images/team-symbols/australia.png",
+		"odiRank": "1",
+		"testRank": "2",
+		"t20Rank": "6",
+		"bgImg": "assets/images/background/Sydney_Harbour_Bridge.png",
+		"interest": "An Indian Cricketer has scored 9 ODI centuries against Australia"
+	}, {
+		"name": "england",
+		"symbol": "assets/images/team-symbols/england.png",
+		"odiRank": "5",
+		"testRank": "4",
+		"t20Rank": "5",
+		"bgImg": "assets/images/background/London-Eye.png",
+		"interest": "An Indian Cricketer has scored 7 Test centuries against England"
+	}, {
+		"name": "bangladesh",
+		"symbol": "assets/images/team-symbols/bangladesh.png",
+		"odiRank": "7",
+		"testRank": "9",
+		"t20Rank": "10",
+		"bgImg": "assets/images/background/Bangladesh_monument.png",
+		"interest": "An Indian Cricketer became the first and only cricketer to score 100 international centuries when he made 114 against Bangladesh"
+	}, {
+		"name": "new zealand",
+		"symbol": "assets/images/team-symbols/newzealand.png",
+		"odiRank": "4",
+		"testRank": "6",
+		"t20Rank": "1",
+		"bgImg": "assets/images/background/newzealand.jpg",
+		"interest": "An Indian Cricketer has scored 4 Test & 5 ODI centuries against New Zealand"
+	}, {
+		"name": "pakistan",
+		"symbol": "assets/images/team-symbols/pakistan.png",
+		"odiRank": "8",
+		"testRank": "5",
+		"t20Rank": "7",
+		"bgImg": "assets/images/background/Pakistan_monument.png",
+		"interest": "An Indian Cricketer made 53 runs off 18 balls against Pakistan, that too in Peshawar"
+	}, {
+		"name": "south africa",
+		"symbol": "assets/images/team-symbols/southafrica.png",
+		"odiRank": "2",
+		"testRank": "3",
+		"t20Rank": "3",
+		"bgImg": "assets/images/background/southafrica_cape-town.png",
+		"interest": "An Indian Cricketer was the first batsman to score a double century in ODIs, which he scored against South Africa"
+	}, {
+		"name": "sri lanka",
+		"symbol": "assets/images/team-symbols/srilanka.jpg",
+		"odiRank": "6",
+		"testRank": "7",
+		"t20Rank": "8",
+		"bgImg": "assets/images/background/SriLanka_sigriya.png",
+		"interest": "An Indian Cricketer has scored 8 ODI centuries against Sri Lanka"
+	}, {
+		"name": "west indies",
+		"symbol": "assets/images/team-symbols/westindies.png",
+		"odiRank": "9",
+		"testRank": "8",
+		"t20Rank": "4",
+		"bgImg": "assets/images/background/WestIndies_cave-barbados.jpg",
+		"interest": "An Indian Cricketer has scored 3 Test and 4 ODI centuries against the dominant bowlers of West Indies"
+	}, {
+		"name": "zimbabwe",
+		"symbol": "assets/images/team-symbols/zimbabwe.png",
+		"odiRank": "11",
+		"testRank": "10",
+		"t20Rank": "12",
+		"bgImg": "assets/images/background/Zimbabwe_victoria-falls.png",
+		"interest": "An Indian Cricketer has scored 3 Test and 5 ODI centuries against Zimbabwe"
+	}]
+}
